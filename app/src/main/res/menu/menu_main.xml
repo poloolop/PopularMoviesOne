@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:orderInCategory="100"
+        android:title="Sort By"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group
+                android:id="@+id/action_sort"
+                android:checkableBehavior="single">
+                <item android:id="@+id/menu_popluar" android:checked="true"  android:title="Most Popular" />
+                <item android:id="@+id/menu_rated" android:title="Highest Rated" />
+            </group>
+        </menu>
+    </item>
+
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+</menu>
